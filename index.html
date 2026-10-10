@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HELLO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+    <script>
+        if(localStorage.getItem('theme') === 'dark'){
+            document.body.classList.add('dark-mode');
+            document.querySelector('svg:nth-child(1)').style.display = 'block';
+            document.querySelector('svg:nth-child(2)').style.display = 'none';
+        }    
+    </script>
+
+
+    <nav id="theme-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon preview-icon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun preview-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+    </nav>
 
     <div class="card">
         <h2>Joaquin Howard</h2>
@@ -15,16 +32,23 @@
     <section>
         <h4>About me</h4>
         <p>
-            a BS Computer Science student from USC.
+            A BS Computer Science student from USC.
             I AM A MINIMALIST.
         </p>
-    </section>
-
-    <section>
         <h4>Contact</h4>
-        <p>Will add soon</p>
+        <a href="mailto:joaquinhoward.work@gmail.com">joaquinhoward.work@gmail.com</a>
+
+        <h4>Projects</h4>
+        <ul>
+            <li>nootbook</li>
+            <i>An educational social media platform to share notes with other students.</i>
+            <li>tutor</li>
+            <i>A website where students can request tutorial from other students.</i>
+            <li>Lakbai</li>
+            <i>A car rental website for locals and tourists in Cebu - Lapulapu.</i>
+        </ul>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
