@@ -83,6 +83,7 @@ ul{
     justify-content: center;
     align-items: flex-start;
     width: 280px;
+    gap: 10px;
 }
 
 .return-btn{
@@ -101,5 +102,18 @@ ul{
 md-elevated-card{
     padding: 25px;
     border-radius: 16px;
+    width: 280px;
+
 }
+
+
+
+img{
+    transition: transform 0.2s ease;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
 
