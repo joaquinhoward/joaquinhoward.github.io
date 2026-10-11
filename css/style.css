@@ -2,7 +2,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 90vh;
     align-items: center;
     font-family: 'Archivo', sans-serif;
 }
@@ -40,7 +39,6 @@ ul{
 .container a{
     display: inline-flex;
     align-items: center;
-    gap: 8px;
 }
 
 
@@ -51,3 +49,50 @@ ul{
 .btn-full svg{
     display: block;
 }
+
+.mini-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mini-container li{
+    list-style: none;
+}
+
+.projects img{
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+.projects .container{
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 280px;
+}
+
+.card2{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 280px;
+}
+
+.return-btn{
+    width: 280px;
+    margin-top: 20px;
+}
+
+.return-btn svg{
+    display: block;
+}
+
+
+
