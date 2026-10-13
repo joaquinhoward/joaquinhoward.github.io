@@ -44,6 +44,7 @@ ul{
 
 .btn-full{
     width: 280px;
+    align-self: center;
 }
 
 .btn-full svg{
@@ -81,8 +82,8 @@ ul{
     display: none;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width: 280px;
+    align-items: center;
+    width: 340px;
     gap: 10px;
 }
 
@@ -104,6 +105,28 @@ md-elevated-card{
     border-radius: 16px;
     width: 280px;
 
+}
+.card2 > md-elevated-card{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+.card2 a svg{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.card2 a svg:hover{
+    transform: scale(1.2);
+}
+
+
+.card section{
+    width: 100%;
 }
 
 
