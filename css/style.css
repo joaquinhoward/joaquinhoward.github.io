@@ -1,3 +1,9 @@
+html, body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -45,6 +51,7 @@ ul{
 .btn-full{
     width: 280px;
     align-self: center;
+    margin-top: 8px;
 }
 
 .btn-full svg{
@@ -54,7 +61,11 @@ ul{
 .mini-container{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 6px;
+}
+
+.mini-container h4{
+    margin: 0;
 }
 
 .mini-container li{
@@ -62,12 +73,12 @@ ul{
 }
 
 .projects img{
-    height: 40px;
+    height: 32px;
     width: auto;
     object-fit: contain;
 }
 .projects .container{
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 .card{
@@ -76,6 +87,44 @@ ul{
     justify-content: center;
     align-items: flex-start;
     width: 350px;
+    padding: 18px 24px;
+    box-sizing: border-box;
+}
+
+.card h1{
+    font-size: 26px;
+    margin: 0 0 6px 0;
+}
+
+.card h4{
+    font-size: 15px;
+    margin: 6px 0 3px 0;
+}
+
+.card p{
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.card ul{
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    line-height: 1.35;
+}
+
+.card ul li{
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.card .container{
+    margin: 1px 0;
+    font-size: 14px;
+}
+
+.card .container h4{
+    margin: 0 0 0 6px;
+    font-size: 14px;
 }
 
 .card2{
@@ -84,12 +133,12 @@ ul{
     justify-content: center;
     align-items: center;
     width: 340px;
-    gap: 10px;
+    gap: 8px;
 }
 
 .return-btn{
     width: 280px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .return-btn svg{
@@ -110,13 +159,15 @@ md-elevated-card{
     width: 340px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 6px;
     align-items: flex-start;
+    padding: 12px 20px;
+    box-sizing: border-box;
 }
 .card2 a svg{
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 18px;
+    bottom: 12px;
     transition: transform 0.2s ease;
 }
 
@@ -138,5 +189,3 @@ img{
 img:hover{
     transform: scale(1.2);
 }
-
-
